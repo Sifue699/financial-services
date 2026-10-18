@@ -1,8 +1,9 @@
 {
-  "name": "claude-for-financial-services",
+  "name": "edu-financial-services",
   "owner": {
     "name": "Matt Piccolella"
   },
+  "description": "Fork de anthropics/financial-services con correcciones (mcp.json, WACC, nombres de conector) para uso personal",
   "plugins": [
     {
       "name": "financial-analysis",
@@ -111,12 +112,6 @@
       "displayName": "S&P Global",
       "source": "./plugins/partner-built/spglobal",
       "description": "S&P Global - Financial data and analytics skills including company tearsheets, earnings previews, and transaction summaries"
-    },
-    {
-      "name": "claude-for-msft-365-install",
-      "displayName": "Claude for Microsoft 365 Install",
-      "source": "./claude-for-msft-365-install",
-      "description": "Provision direct cloud access (Vertex AI, Bedrock, or LLM gateway) for the Claude Microsoft 365 add-in. Generates the customized manifest, walks through Azure admin consent, and writes per-user config via Graph extension attributes."
     }
   ]
 }

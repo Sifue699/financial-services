@@ -1,3 +1,6 @@
+> **Fork de Sifue699.** Este fork corrige tres fallos del original (`.mcp.json` invalido, pesos del WACC con deuda neta y nombre `mcp__capiq__*` en los agentes) y renombra el catalogo a `edu-financial-services`, porque el nombre original esta reservado para repos de `github.com/anthropics/`. Tambien quita del catalogo `claude-for-msft-365-install` (su nombre esta reservado y no se usa aqui). Instala con:
+> `claude plugin marketplace add Sifue699/financial-services` y `claude plugin install <plugin>@edu-financial-services`.
+
 # Claude for Financial Services
 
 Reference agents, skills, and data connectors for the financial-services workflows we see most — investment banking, equity research, private equity, and wealth management.
