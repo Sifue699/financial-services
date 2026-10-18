@@ -225,19 +225,20 @@ Determine Pre-Tax Cost of Debt from:
 
 ```
 Market Value Equity = Current Stock Price × Shares Outstanding
-Net Debt = Total Debt - Cash & Equivalents
-Enterprise Value = Market Cap + Net Debt
+Total Debt = Short-Term Debt + Long-Term Debt (gross, same definition used for Cost of Debt)
+Total Capital = Market Cap + Total Debt
 
-Equity Weight = Market Cap / Enterprise Value
-Debt Weight = Net Debt / Enterprise Value
+Equity Weight = Market Cap / Total Capital
+Debt Weight = Total Debt / Total Capital
 
 WACC = (Cost of Equity × Equity Weight) + (After-Tax Cost of Debt × Debt Weight)
 ```
 
+Use GROSS debt for the weights. Both weights must lie between 0% and 100% and sum to 100%.
+Net Debt (Total Debt - Cash) is used only in the Enterprise Value to Equity Value bridge, never in the WACC weights.
+
 **Special Cases:**
-- **Net Cash Position**: If Cash > Debt, Net Debt is NEGATIVE
-  - Debt Weight may be negative
-  - WACC calculation adjusts accordingly
+- **Net Cash Position**: If Cash > Debt, the WACC weights still use gross Total Debt; the net cash is added back in the EV to Equity bridge
 - **No Debt**: WACC = Cost of Equity
 
 **Typical WACC Ranges:**
@@ -1053,10 +1054,9 @@ WEIGHTED AVERAGE COST OF CAPITAL,X.XX%,[Green output]
 **Key WACC Formulas:**
 ```
 Market Cap = Price × Shares
-Net Debt = Total Debt - Cash
-Enterprise Value = Market Cap + Net Debt
-Equity Weight = Market Cap / EV
-Debt Weight = Net Debt / EV
+Total Capital = Market Cap + Total Debt (gross)
+Equity Weight = Market Cap / Total Capital
+Debt Weight = Total Debt / Total Capital
 WACC = (Cost of Equity × Equity Weight) + (After-tax Cost of Debt × Debt Weight)
 ```
 
